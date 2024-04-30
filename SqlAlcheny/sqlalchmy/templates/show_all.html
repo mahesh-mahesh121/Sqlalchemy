@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <h1>Welcome All</h1>
+   <a href="{{ url_for('new') }}">Login</a>
+   <hr> 
+   
+   <table>
+      <thead>
+         <th>Id</th>
+         <th>Name</th>
+         <th>Fess</th>
+         <th>Address</th>
+      </thead>
+      <tbody>
+         {% for student in students %}
+            <tr>
+                  <td>{{ student.id }}</td>
+                  <td>{{ student.name }}</td>
+                  <td>{{ student.fess }}</td>
+                  <td>{{ student.address }}</td>
+            </tr>
+         {% endfor %}
+      </tbody>
+   </table>
+</body>
+</html>

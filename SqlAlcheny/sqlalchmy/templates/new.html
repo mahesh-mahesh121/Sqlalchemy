@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <h1>New</h1>
+   
+   <form action = "{{ request.path }}"  method = "post">
+      <label for = "name">Name</label><br>
+      <input type = "text" name = "name" placeholder = "Name" /><br>
+      <label for = "email">Fess</label><br>
+      <input type = "text" name = "fess" placeholder = "fess" /><br>
+      <label for = "addr">addr</label><br>
+      <textarea name = "addr" placeholder = "addr"></textarea><br>
+      <input type = "submit" value = "Submit" />
+   </form>
+</body>
+</html>
